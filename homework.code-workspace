@@ -1,0 +1,28 @@
+{
+	"folders": [
+		{
+			"path": "/Users/padupp/Desktop/Maxinilian Schwarzmuller. CSS/css-in-action"
+		},
+		{
+			"path": "/Users/padupp/Desktop/Maxinilian Schwarzmuller. CSS/assignment"
+		},
+		{
+			"path": "/Users/padupp/Desktop/JS-andrew mead/js-bootcamp"
+		},
+		{
+			"path": "/Users/padupp/Desktop/react-andrew/indecision-app"
+		},
+		{
+			"path": "/Users/padupp/Desktop/react-complete-guide"
+		},
+		{
+			"path": "/Users/padupp/Downloads/base-syntax--assignment-problem"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "indecision-app"
+	}
+}
