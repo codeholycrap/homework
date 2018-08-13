@@ -31,13 +31,12 @@ class Main extends Component {
     const { user } = this.props
     return (
       <div className='secondbox'>
-        <img className='pic' src={user.avatar} />
+        <img className='pic' src={user.avatar} width='50px' />
         <div className='left'>
-          <h5>{user.name}</h5>
-          <p>{hi}</p>
-          
+          <h5 className='name'>{user.name}</h5>
+          <p className='bio'>{user.bio}</p>
           <ul>
-            
+            <li>{user.follow}</li>
           </ul>
         </div>
       </div>

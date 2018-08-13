@@ -3,6 +3,7 @@
 }
 
 .box {
+  box-sizing: border-box;
   width: 60%;
   height: 5%;
   float: left;
@@ -16,9 +17,9 @@
 }
 
 .secondbox  {
-  align-content: center;
-  width: 1300px;
-  height: 300px;
+  box-sizing: border-box;
+  width: 1210px;
+  height: 500px;
   float: left;
   margin: 50px 5%;
   font-size: 35px;

@@ -9,9 +9,6 @@ class App extends Component {
     user: {}
   }
 
-
-  
-
   getUser = () => {
     const name = this.refs.name.value;
     fetch(`http://api.github.com/users/${name}`)
@@ -22,9 +19,16 @@ class App extends Component {
             name: data.name,
             location: data.location,
             avatar: data.avatar_url,
-            followers: data.followers_url
+            followers: data.followers_url,
+            bio: data.bio
           }
         })
+    })
+  }
+
+  getFollowers = () => {
+     this.state.followers.map(follower => {
+      return <li>{follower}</li>
     })
   }
 
@@ -37,7 +41,7 @@ class App extends Component {
           <button className='button' onClick={this.getUser}>OK</button>
         </div>
         
-        <Main  user={user}  follow={user.followers}/>
+        <Main  user={user}  follow={this.getFollowers}/>
       </div>
     );
   }
