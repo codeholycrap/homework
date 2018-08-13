@@ -12,8 +12,8 @@ class App extends Component {
   getUser = () => {
     const name = this.refs.name.value;
     fetch(`http://api.github.com/users/${name}`)
-    .then(response => response.json())
-    .then(data => {
+      .then(response => response.json())
+      .then(data => {
         this.setState({
           user: {
             name: data.name,
@@ -23,17 +23,24 @@ class App extends Component {
             bio: data.bio
           }
         })
-    })
+      })
   }
 
+
   getFollowers = () => {
-     this.state.followers.map(follower => {
-      return <li>{follower}</li>
+    this.state.followers.map(follower => {
+      return <p>{follower}</p>
     })
   }
+  
 
   render() {
     const { user } = this.state;
+
+
+    
+
+
     return (
       <div className='App'>
         <div className='line'>
@@ -41,7 +48,7 @@ class App extends Component {
           <button className='button' onClick={this.getUser}>OK</button>
         </div>
         
-        <Main  user={user}  follow={this.getFollowers}/>
+        <Main user={user} follow={this.getFollowers} />
       </div>
     );
   }

@@ -35,9 +35,7 @@ class Main extends Component {
         <div className='left'>
           <h5 className='name'>{user.name}</h5>
           <p className='bio'>{user.bio}</p>
-          <ul>
-            <li>{user.follow}</li>
-          </ul>
+          <p>{user.follow}</p>
         </div>
       </div>
     )
